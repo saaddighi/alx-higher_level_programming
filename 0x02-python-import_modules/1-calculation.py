@@ -4,11 +4,11 @@ if __name__ == '__main__':
     b = 5
     
     def add(a, b):
-        return print(a + b)
+        return print(f'{a + b}')
     def sub(a,b):
-        return print(a - b)
+        return print(f'{a - b}')
     def div(a,b):
-        return print(a / b)
+        return print(f'{a / b}')
     def mul(a,b):
-        return print(a * b)
+        return print(f'{a * b}')
     
