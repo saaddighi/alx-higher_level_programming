@@ -3,7 +3,7 @@
 if __name__ == '__main__':    
     
     def taks(argument):
-        
+        argument = str(argument)
         t = argument.split(' ')
         r = 0
         
