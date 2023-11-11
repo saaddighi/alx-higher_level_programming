@@ -19,8 +19,4 @@ if __name__ == '__main__':
             l = i
             r = r+1
             print(f'{r} : {l}')
-                 
-        
-         
-    taks('hello mike')
         
