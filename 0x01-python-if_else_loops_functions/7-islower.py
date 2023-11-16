@@ -4,6 +4,6 @@ def islower(c):
     for i in range(ord('a'), ord('z')+1):
         p.append(chr(i))
     if c in p:
-        True
+        return True
     else:
-        False
+        return False
