@@ -1,9 +1,3 @@
 #!/usr/bin/python3
-l = []
-for i in range(0, 100):
-    if i < 10:
-        i = f'0{i}'
-    
-    l.append(i)
-l = ', '.join(map(str, l))
-print('{}'.format((l)))
+for i in range(100):
+    print(f"{i:02}", end=", " if i < 99 else "\n")
