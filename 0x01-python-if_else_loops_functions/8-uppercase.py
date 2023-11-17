@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-p = list(chr(range(ord('a'),ord('z'))))
-
 def uppercase(str):
-    return
-    
-
-print(p)
+    for char in my_str:
+        print(chr(ord('{}'.format(char)) - 32), end=' ' if char == ' ' else "")
