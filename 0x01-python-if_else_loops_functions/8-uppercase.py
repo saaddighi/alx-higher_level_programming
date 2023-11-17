@@ -2,8 +2,5 @@
 def uppercase(str):    
     for char in str:
         if char.islower() is True :   
-            char = chr(ord((char)) - 32)
+            char = chr(ord(('{}'.format(char))) - 32)
         print(char,end='')
-
-
-
