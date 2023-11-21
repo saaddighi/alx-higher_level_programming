@@ -10,7 +10,7 @@ class Square:
         Args:
             size: length of side of the square.
         """
-        
+        self.__size = size
         """the value of size of square
            must be an interger"""
         try:
@@ -23,8 +23,8 @@ class Square:
            bigger then 0"""
         
         try:
-            if size > 0:
+            if size >= 0:
                 pass
         except:
             raise ValueError("size must be >= 0")
-        self.__size = size
+        
