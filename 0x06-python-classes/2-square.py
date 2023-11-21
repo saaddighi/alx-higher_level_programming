@@ -10,15 +10,14 @@ class Square:
         Args:
             size: length of side of the square.
         """
-        self.__size = size
         """the value of size of square
            must be an interger"""
         try:
-            if isinstance(size,int) is True:
-                pass
+            size + 2
         except:
-            raise TypeError("size must be an integer")
-        
+            raise TypeError('size must be an integer')
+
+        self.__size = size
         """the length of the side of square must be
            bigger then 0"""
         
