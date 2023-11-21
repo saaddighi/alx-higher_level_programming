@@ -15,7 +15,7 @@ class Square:
            must be an interger"""
         try:
             if isinstance(size,int) is True:
-                continue
+                pass
         except:
             raise TypeError("size must be an integer")
         
@@ -24,7 +24,7 @@ class Square:
         
         try:
             if size > 0:
-                continue
+                pass
         except:
             raise ValueError("size must be >= 0")
         self.__size = size
