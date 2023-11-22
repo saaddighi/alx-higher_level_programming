@@ -1,30 +1,13 @@
 #!/usr/bin/python3
-
-if __name__ == '__main__':    
-    
-    def taks():
-        argument = __builtins__.argv[:1]
-        a = ''
-        r = 0
-        if argument != '':
-            
-            t = argument.split(' ')
-            a = len(t)
-            if a == 1:
-                a = f'{a} argument:'
-            elif a == 0 :
-                a = f'{a} arguments.'
-            elif argument == 0:
-                a = f'{a} arguments:'
-            print(a)
-            for i in t:
-                l = i
-                r = r+1
-                print(f'{r} : {l}')
-        
-        
-        
-        
-        
-taks()
+if __name__ == "__main__":
+    import sys
+    argLen = len(sys.argv)
+    if argLen == 1:
+        print("{} arguments.".format(argLen - 1))
+    elif argLen == 2:
+        print("{} argument:".format(argLen - 1))
+    else:
+        print("{} arguments:".format(argLen - 1))
+    for i in range(1, argLen):
+        print("{}: {}".format(i, sys.argv[i]))
         
