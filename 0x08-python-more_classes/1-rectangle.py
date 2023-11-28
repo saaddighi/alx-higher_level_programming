@@ -8,6 +8,9 @@ class Rectangle:
     """intiating and creating private attribute
        named width and """
     def __init__(self, width=0, height=0):
+        """ Args for innit:
+            width
+            height"""
         self._width = width
         self._height = height 
     """proprety width(self) to retrieve width """
