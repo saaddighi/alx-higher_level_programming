@@ -66,6 +66,8 @@ class Rectangle:
         result = ''
         h = self.__height
         w = self.__width
+        if h == 0 or w == 0:
+            return ''
         for i in range(0,h):
             d = '#'*w
             result += d + '\n'
