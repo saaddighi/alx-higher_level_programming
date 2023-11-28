@@ -68,7 +68,8 @@ class Rectangle:
         w = self.__width
         if h == 0 or w == 0:
             return ''
-        for i in range(0,h):
-            d = '#'*w
+        for i in range(0,h-1):
+            d = '#'*w 
             result += d + '\n'
+        result += '#'*w
         return result
