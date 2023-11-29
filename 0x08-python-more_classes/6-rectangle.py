@@ -7,7 +7,7 @@ Defines a Rectangle class.
 class Rectangle:
     """Public class attribute"""
     number_of_instances = 0
-    
+ 
     """Rectangle class defined by width and height."""
 
     def __init__(self, width=0, height=0):
@@ -16,8 +16,6 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-        
-        
 
     @property
     def width(self):
