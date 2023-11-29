@@ -89,6 +89,7 @@ class Rectangle:
             result += d + '\n'
         result += '#'*w
         return result
+   
     def __repr__(self):
         """Return internal string representation of a Rectangle
         """
