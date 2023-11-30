@@ -8,6 +8,7 @@ class Rectangle:
     """Public class attributes"""
     number_of_instances = 0
     print_symbol = "#"
+    print_symbol = str(print_symbol)
 
     """Rectangle class defined by width and height."""
 
@@ -74,8 +75,8 @@ class Rectangle:
         if h == 0 or w == 0:
             return ''
         for i in range(0, h-1):
-            d = self.print_symbol*w
-            result += str(d) + '\n'
+            d = str(self.print_symbol)*w
+            result += d + '\n'
         result += self.print_symbol*w
         return result
 
