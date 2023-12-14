@@ -14,5 +14,5 @@ def matrix_divided(matrix, div):
         for d in i:
             if type(d) not in [int,float]:
                 raise TypeError('matrix must be a matrix (list of lists) of integers/floats')            
-        return print(d / div)
+        return d / div
 
