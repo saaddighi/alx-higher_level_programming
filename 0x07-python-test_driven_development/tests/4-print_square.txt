@@ -1,41 +1,35 @@
-# File: print_square_doctest.txt
-
 """
-A function that prints a square.
-
-Usage:
-    print_square(size)
+Prints a square made of '#' characters with the specified size.
 
 Parameters:
-    size (int): The size of the square to be printed.
+- size (int): The size of the square.
 
 Raises:
-    TypeError: If size is not an integer.
-    ValueError: If size is less than 0.
-    TabError: If size is a float and is less than 0.
+- TypeError: If size is not an integer.
+- ValueError: If size is less than 0.
 
 Examples:
-    >>> print_square(5)
-    #####
-    #####
-    #####
-    #####
-    #####
+>>> print_square(3)
+###
+###
+###
 
-    >>> print_square(3)
-    ###
-    ###
-    ###
+>>> print_square(0)
+    
+>>> print_square(5)
+#####
+#####
+#####
+#####
+#####
 
-    >>> print_square(0)
+>>> print_square(-1)
+Traceback (most recent call last):
+    ...
+ValueError: size must be >= 0
 
-    >>> print_square(-2)
-    Traceback (most recent call last):
-        ...
-    ValueError: size must be >= 0
-
-    >>> print_square(4.5)
-    Traceback (most recent call last):
-        ...
-    TabError: size must be an integer
+>>> print_square(3.5)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
 """
