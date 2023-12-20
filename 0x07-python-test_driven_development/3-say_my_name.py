@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""a function that return the first and last name"""
+"""a function that return the first and last name."""
+
 
 def say_my_name(first_name, last_name=""):
     """raise exeption if first name not a string"""
