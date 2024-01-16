@@ -1,2 +1,2 @@
 -- creat a database in mysql server.
-CREAT DATABASE IF NOT EXISTS 'hbtn_0c_0';
+CREATE DATABASE IF NOT EXISTS `hbtn_0c_0`;
